@@ -3,6 +3,6 @@ return {
     version = "*",
     config = true,
     opts = function()
-        vim.keymap.set('n', '<F4>', '<Cmd>ToggleTerm direction=float<CR>')
+        vim.keymap.set('n', '<leader>c', '<Cmd>ToggleTerm direction=float<CR>')
     end
 }
