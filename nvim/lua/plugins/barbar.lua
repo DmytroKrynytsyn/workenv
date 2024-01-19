@@ -9,6 +9,7 @@ return {
         animation = true,
         sidebar_filetypes = {
             ['neo-tree'] = {event = 'BufWipeout'},
-          },
+        },
+        insert_at_start = true,
     }
 }
