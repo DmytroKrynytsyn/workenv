@@ -4,6 +4,7 @@
 Common
 
 - sudo port install ripgrep
+- sudo port install gsed
 - zsh
 
 ---
