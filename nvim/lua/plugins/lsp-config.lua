@@ -23,7 +23,6 @@ return  {
                 ensure_installed = {
                     'black',
                     'stylua',
-                    'flake8',
                     'mypy',
                     'isort',
                 },
