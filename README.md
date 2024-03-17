@@ -10,7 +10,7 @@ Common
 ---
 Iterm2
 
-1. color scheme
+1. color scheme (I use 'alabaster:')
 https://raw.githubusercontent.com
 2. oh my zsh
 https://github.com/ohmyzsh/ohmyzsh
