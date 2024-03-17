@@ -30,7 +30,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ---
 Tmux
 
-Prefix + I/U - intall/update plugins
+1. place .tmux.conf into HOME
+2. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+3. Prefix + I/U - intall/update plugins
 
 ---
 NeoVim
