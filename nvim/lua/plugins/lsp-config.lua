@@ -138,7 +138,7 @@ return  {
           local servers = {
             -- clangd = {},
             -- gopls = {},
-            -- pyright = {},
+            pyright = {},
             -- rust_analyzer = {},
             -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
             --
@@ -149,20 +149,7 @@ return  {
             -- tsserver = {},
             --
 
-            lua_ls = {
-              -- cmd = {...},
-              -- filetypes { ...},
-              -- capabilities = {},
-              settings = {
-                Lua = {
-                  completion = {
-                    callSnippet = 'Replace',
-                  },
-                  -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-                  -- diagnostics = { disable = { 'missing-fields' } },
-                },
-              },
-            },
+            lua_ls = {},
           }
 
           -- Ensure the servers and tools above are installed
