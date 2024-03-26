@@ -10,9 +10,9 @@ return {
           },
           indent = { enable = true, disable = { 'ruby' } },
         },
-        config = function(_, opts)
+    config = function(_, opts)
 
-      require('nvim-treesitter.configs').setup(opts)
+    require('nvim-treesitter.configs').setup(opts)
 
     end
 }
