@@ -6,6 +6,7 @@ Common
 - sudo port install ripgrep
 - sudo port install gsed
 - zsh
+- sudo apt install build-essential # for debian/ubuntu
 
 ---
 Iterm2
