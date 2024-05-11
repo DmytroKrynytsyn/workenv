@@ -9,7 +9,7 @@ Common
 - sudo apt install build-essential # for debian/ubuntu
 - yazi & mc - as file managers
 - fzf - finder
-
+- btop - process monitoring
 ---
 Iterm2
 
