@@ -7,6 +7,8 @@ Common
 - sudo port install gsed
 - zsh
 - sudo apt install build-essential # for debian/ubuntu
+- yazi & mc - as file managers
+- fzf - finder
 
 ---
 Iterm2
