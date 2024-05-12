@@ -10,6 +10,10 @@ Common
 - yazi & mc - as file managers
 - fzf - finder
 - btop - process monitoring
+
+---
+kitty terminal
+- kitten themes -> alabaster
 ---
 Iterm2
 
