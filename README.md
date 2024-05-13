@@ -8,6 +8,7 @@ Common
 - zsh
 - sudo apt install build-essential # for debian/ubuntu
 - yazi & mc - as file managers
+  - poppler (for pdf preview in console)
 - fzf - finder
 - btop - process monitoring
 
