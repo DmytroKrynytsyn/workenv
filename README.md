@@ -13,6 +13,10 @@ Common
 - btop - process monitoring
 
 ---
+Alternative config
+v1='XDG_CONFIG_HOME=~/.config1 nvim'
+
+---
 kitty terminal
 - kitten themes -> alabaster
 ---
