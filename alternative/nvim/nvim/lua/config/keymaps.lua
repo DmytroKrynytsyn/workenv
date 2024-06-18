@@ -8,8 +8,8 @@ function Common ()
   mapkey("<leader>b", "e #", "n") -- Switch to Other Buffer
 
   -- Directory Navigatio}n
-  mapkey("<leader>m", "NvimTreeFocus", "n")
-  mapkey("<leader>e", "NvimTreeToggle", "n")
+  -- mapkey("<leader>m", "NvimTreeFocus", "n")
+  -- mapkey("<leader>e", "NvimTreeToggle", "n")
 
   -- Pane and Window Navigation
   mapkey("<C-h>", "<C-w>h", "n") -- Navigate Left
@@ -26,8 +26,9 @@ function Common ()
   mapkey("<C-l>", "TmuxNavigateRight", "n") -- Navigate Right
 
   -- Window Management
-  mapkey("<leader>sv", "vsplit", "n") -- Split Vertically
-  mapkey("<leader>sh", "split", "n") -- Split Horizontally
+  mapkey("<leader>wv", "vsplit", "n") -- Split Vertically
+  mapkey("<leader>wh", "split", "n") -- Split Horizontally
+  mapkey("<leader>wq", "quite", "n") -- Split Horizontally
   mapkey("<C-Up>", "resize +2", "n")
   mapkey("<C-Down>", "resize -2", "n")
   mapkey("<C-Left>", "vertical resize +2", "n")
