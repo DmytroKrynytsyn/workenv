@@ -82,13 +82,6 @@ function Telescope ()
     })
   end, { desc = '[/] Fuzzily search in current buffer' })
 
-  vim.keymap.set('n', '<leader>f/', function()
-    builtin.live_grep {
-      grep_open_files = true,
-      prompt_title = 'Live Grep in Open Files',
-    }
-  end, { desc = '[F]ind [/] in Open Files' })
-
   vim.keymap.set('n', '<leader>fn', function()
     builtin.find_files { cwd = vim.fn.stdpath 'config' }
   end, { desc = '[F]ind [N]eovim files' })
@@ -103,7 +96,17 @@ function NvimComment ()
   vim.keymap.set('n', '<leader>ec', '<Cmd>CommentToggle<CR>')
 end
 
+function Gitsigns ()
+  vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
+end
+
+function VimFugitive ()
+  vim.keymap.set("n", "<leader>gb", ":Git blame<CR>", {})
+end
+
 return { Telescope = Telescope, 
          Common = Common, 
          Neotree = Neotree, 
-         NvimComment = NvimComment }
+         NvimComment = NvimComment,
+         Gitsigns = Gitsigns,
+         VimFugitive = VimFugitive }
