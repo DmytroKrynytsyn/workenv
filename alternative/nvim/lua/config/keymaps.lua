@@ -28,37 +28,13 @@ function Common ()
   -- Window Management
   mapkey("<leader>wv", "vsplit", "n") -- Split Vertically
   mapkey("<leader>wh", "split", "n") -- Split Horizontally
-  mapkey("<leader>wq", "quite", "n") -- Split Horizontally
-  mapkey("<C-Up>", "resize +2", "n")
-  mapkey("<C-Down>", "resize -2", "n")
-  mapkey("<C-Left>", "vertical resize +2", "n")
-  mapkey("<C-Right>", "vertical resize -2", "n")
+  mapkey("<leader>wq", "quit", "n") -- Split Horizontally
 
   -- Show Full File-Path
   mapkey("<leader>pa", "echo expand('%:p')", "n") -- Show Full File Path
-
-  -- Notes
-  mapkey("<leader>ng", "Neorg workspace general", "n")
-  mapkey("<leader>nw", "Neorg workspace work", "n")
-  mapkey("<leader>ny", "Neorg workspace youtube", "n")
   
   -- Search
   mapkey("<leader><Esc><Esc>", "noh", "n")
-
-  -- Indenting
-  vim.keymap.set("v", "<", "<gv", { silent = true, noremap = true })
-  vim.keymap.set("v", ">", ">gv", { silent = true, noremap = true })
-
-  -- Zen Mode
-  vim.api.nvim_set_keymap("n", "<leader>zn", ":TZNarrow<CR>", {})
-  vim.api.nvim_set_keymap("v", "<leader>zn", ":'<,'>TZNarrow<CR>", {})
-  vim.api.nvim_set_keymap("n", "<leader>sm", ":TZFocus<CR>", {})
-  vim.api.nvim_set_keymap("n", "<leader>zm", ":TZMinimalist<CR>", {})
-  vim.api.nvim_set_keymap("n", "<leader>za", ":TZAtaraxis<CR>", {})
-
-  -- Comments
-  vim.api.nvim_set_keymap("n", "<C-_>", "gtc", { noremap = false })
-  vim.api.nvim_set_keymap("v", "<C-_>", "goc", { noremap = false })
 
 end
 
@@ -89,7 +65,7 @@ function Telescope ()
 end
 
 function Neotree ()
-  vim.keymap.set('n', '<leader>t', '<Cmd>Neotree toggle<CR>')
+  vim.keymap.set('n', '<leader>t', '<Cmd>Neotree<CR>')
 end
 
 function NvimComment ()
