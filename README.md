@@ -57,4 +57,5 @@ QMK
 ~/qmk_firmware/keyboards/crkbd/keymaps/<keymap_name>/keymap.c
 
 qmk list-keymaps -kb crkbd/rev1
+
 qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
