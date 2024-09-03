@@ -50,3 +50,16 @@ Tmux
 NeoVim
 
 put "nvim" folder in ~/.config
+
+---
+QMK
+
+~/qmk_firmware/keyboards/crkbd/keymaps/<keymap_name>/keymap.c
+
+
+
+
+/Users/dmytrokrynytsyn/qmk_firmware/keyboards/crkbd/keymaps/default2/keymap.c
+
+qmk list-keymaps -kb crkbd/rev1
+qmk compile -kb crkbd/rev1 -km default2 -e CONVERT_TO=promicro_rp2040
