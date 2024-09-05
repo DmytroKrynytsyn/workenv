@@ -58,6 +58,9 @@ QMK
 
 
 
+/Users/dmytrokrynytsyn/qmk_firmware/keyboards/crkbd/keymaps/default2/keymap.c
+
+
 
 /Users/dmytrokrynytsyn/qmk_firmware/keyboards/crkbd/keymaps/default2/keymap.c
 
