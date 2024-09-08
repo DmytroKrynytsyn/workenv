@@ -64,3 +64,7 @@ qmk list-keymaps -kb crkbd/rev1
 
 
 qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
+
+
+python qmk/ctojson.py qmk/keymap.c
+
