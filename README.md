@@ -62,6 +62,9 @@ https://config.qmk.fm/#/crkbd/rev1/LAYOUT_split_3x6_3
 
 qmk list-keymaps -kb crkbd/rev1
 
+<img width="697" alt="Screenshot 2024-09-08 at 16 56 04" src="https://github.com/user-attachments/assets/8059834b-dff1-4750-91a9-0793fc4a3fbc">
+
+
 
 qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
 
