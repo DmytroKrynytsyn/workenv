@@ -5,7 +5,8 @@ QMK
 
 ---
 
-<img width="697" alt="Screenshot 2024-09-08 at 16 56 04" src="https://github.com/user-attachments/assets/8059834b-dff1-4750-91a9-0793fc4a3fbc">
+![Screenshot 2024-09-15 at 12 38 57](https://github.com/user-attachments/assets/bf1940f4-ad14-4055-9fb0-19c1302fe98d)
+
 
 qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
 
