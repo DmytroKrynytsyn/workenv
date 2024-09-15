@@ -25,12 +25,16 @@ with open(sys.argv[1], 'r') as file:
             is_inside = "PROGMEM keymaps" in line
             continue
 
-        stripped_line = re.sub(r'\s+', '', line.strip())
-        if stripped_line and stripped_line[0].isupper():
+        stripped_line = re.sub(r'\s+', '', line.strip()).strip()
+
+        if stripped_line.startswith("//") or stripped_line.isspace() or stripped_line == "":
+            continue
+
+        if stripped_line and (stripped_line[0].isupper() or stripped_line[0] == "_"):
             all_rows.append(stripped_line)
 
 if 0 != len(all_rows) % ROWS_PER_LAYER:
-    print(f"Corne 3x6 has {ROWS_PER_LAYER} rows per layer")
+    print(f"Something's wrong - Corne 3x6 has {ROWS_PER_LAYER} rows per layer")
 
 for layer_number in range(int(len(all_rows)/ROWS_PER_LAYER)):
     line_number_from = layer_number * ROWS_PER_LAYER

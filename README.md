@@ -71,3 +71,7 @@ qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
 
 python qmk/ctojson.py qmk/keymap.c
 
+
+
+cp qmk/keymap.c ~/qmk_firmware/keyboards/crkbd/keymaps/default2/keymap.c 
+qmk compile -kb crkbd/rev1 -km default2 -e CONVERT_TO=promicro_rp2040
