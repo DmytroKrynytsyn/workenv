@@ -1,5 +1,30 @@
 # workenv
 
+
+QMK
+
+---
+
+![Screenshot 2024-09-15 at 12 38 57](https://github.com/user-attachments/assets/bf1940f4-ad14-4055-9fb0-19c1302fe98d)
+
+
+qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
+
+~/qmk_firmware/keyboards/crkbd/keymaps/<keymap_name>/keymap.c
+
+qmk list-keymaps -kb crkbd/rev1
+
+
+python qmk/ctojson.py qmk/keymap.c
+
+
+https://config.qmk.fm/#/crkbd/rev1/LAYOUT_split_3x6_3
+
+
+cp qmk/keymap.c ~/qmk_firmware/keyboards/crkbd/keymaps/default2/keymap.c 
+
+qmk compile -kb crkbd/rev1 -km default2 -e CONVERT_TO=promicro_rp2040
+
 ---
 Common
 
@@ -51,11 +76,3 @@ NeoVim
 
 put "nvim" folder in ~/.config
 
----
-QMK
-
-~/qmk_firmware/keyboards/crkbd/keymaps/<keymap_name>/keymap.c
-
-qmk list-keymaps -kb crkbd/rev1
-
-qmk compile -kb crkbd/rev1 -km <keymap_name> -e CONVERT_TO=promicro_rp2040
