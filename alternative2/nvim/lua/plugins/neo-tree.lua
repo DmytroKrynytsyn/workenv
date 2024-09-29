@@ -12,7 +12,12 @@ return {
             filesystem = {
                 follow_current_file = { enabled = true },
             },
-            window = { mappings= { ["Z"] = "expand_all_nodes" } }
+            window = { mappings= { 
+                ["Z"] = "expand_all_nodes",
+                ["h"] = "open_split",
+                ["v"] = "open_vsplit",
+                ["s"] = "noop",
+            } }
         })
 
         require("config.keymaps").Neotree()

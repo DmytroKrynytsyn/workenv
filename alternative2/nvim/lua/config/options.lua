@@ -43,3 +43,6 @@ vim.opt.showmode = false
 -- Files
 vim.opt.undofile = true
 vim.opt.updatetime = 250
+
+vim.g.EasyMotion_do_mapping = 0  -- Disable default mappings
+

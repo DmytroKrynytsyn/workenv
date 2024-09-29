@@ -74,6 +74,10 @@ function NvimComment ()
   vim.keymap.set('n', '<leader>ec', '<Cmd>CommentToggle<CR>')
 end
 
+function Toggleterm ()
+  vim.keymap.set('n', '<leader>c', '<Cmd>ToggleTerm direction=float<CR>')
+end
+
 function Gitsigns ()
   vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
 end
@@ -87,4 +91,5 @@ return { Telescope = Telescope,
          Neotree = Neotree, 
          NvimComment = NvimComment,
          Gitsigns = Gitsigns,
+         Toggleterm = Toggleterm,
          VimFugitive = VimFugitive }
