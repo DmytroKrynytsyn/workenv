@@ -75,7 +75,7 @@ function NvimComment ()
 end
 
 function Toggleterm ()
-  vim.keymap.set('n', '<leader>c', '<Cmd>ToggleTerm direction=float<CR>')
+  vim.keymap.set('n', '<leader>cc', '<Cmd>ToggleTerm direction=float<CR>')
 end
 
 function Gitsigns ()
