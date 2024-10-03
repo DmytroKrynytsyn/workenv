@@ -7,7 +7,22 @@ return {
 	},
 	config = function()
 		require("mason-null-ls").setup({
-			ensure_installed = { "stylua", "jq", "mypy", "black", "isort", "shfmt", "shellcheck" },
+			ensure_installed = {
+				"stylua",
+				"jq",
+				"mypy",
+				"black",
+				"isort",
+				"shfmt",
+				"shellcheck",
+				"ansiblelint",
+				"terrafmt",
+				"terraform_fmt",
+				"terraform_validate",
+                "yamllint",
+                "yamlfmt",
+                "yamlfix"
+			},
 		})
 	end,
 }

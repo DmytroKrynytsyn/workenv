@@ -15,6 +15,13 @@ return {
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.isort,
 				null_ls.builtins.formatting.shfmt,
+                null_ls.builtins.diagnostics.ansiblelint,
+                null_ls.builtins.formatting.terraform_fmt,
+                null_ls.builtins.diagnostics.terraform_validate,
+                null_ls.builtins.formatting.yamlfix,
+                null_ls.builtins.formatting.yamlfmt,
+                null_ls.builtins.diagnostics.yamllint,
+
 			},
 		})
 		vim.lsp.buf.format({ timeout_ms = 50000 })
