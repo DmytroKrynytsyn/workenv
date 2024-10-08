@@ -62,11 +62,7 @@ function Telescope()
 end
 
 function Neotree()
-	vim.keymap.set("n", "<leader>t", "<Cmd>Neotree<CR>")
-end
-
-function NvimComment()
-	vim.keymap.set("n", "<leader>ec", "<Cmd>CommentToggle<CR>")
+	vim.keymap.set("n", "<leader>t", "<Cmd>Neotree toggle<CR>")
 end
 
 function Toggleterm()
