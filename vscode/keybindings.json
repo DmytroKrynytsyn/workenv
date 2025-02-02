@@ -3,5 +3,13 @@
     {
         "key": "cmd+m",
         "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+y",
+        "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "cmd+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
     }
 ]
