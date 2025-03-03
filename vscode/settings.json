@@ -9,4 +9,9 @@
     "html.autoClosingTags": false,
     "xml.completion.autoCloseTags": false,
     "window.zoomLevel": 1.5,
+    "explorer.confirmDragAndDrop": false,
+    "editor.autoClo singComments": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "python.createEnvironment.trigger": "off",
 }
