@@ -37,3 +37,8 @@ echo "source ~/.config/fzf_integration.sh" >> .zshrc
 
 cp -r texteditornvim/nvim ~/.config/
 
+echo "alias t=tmux" >> ~/.zshrc
+echo "alias e=exit" >> ~/.zshrc
+echo "alias v=nvim" >> ~/.zshrc
+echo "alias gs='git status'" >> ~/.zshrc
+echo "alias la='ls -al'" >> ~/.zshrc
