@@ -33,7 +33,7 @@ echo config
 sudo echo "options hid_apple swap_opt_cmd=1 fnmode=2" > /etc/modprobe.d/hid_apple.conf
 
 fzf --zsh > ~/.config/fzf_integration.sh
-sudo echo "source ~/.config/fzf_integration.sh" >> .zshrc
+sudo echo "source ~/.config/fzf_integration.sh" >> ~/.zshrc
 
 cp -r texteditornvim/nvim ~/.config/
 
