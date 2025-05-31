@@ -2,12 +2,12 @@
 
 echo common
 
-dnf upgrade -y --refresh
+sudo dnf upgrade -y --refresh
 
 
 echo utilities
 
-dnf install -y \
+sudo dnf install -y \
     ripgrep \
     zsh \
     fzf \
@@ -19,7 +19,7 @@ echo kitty
 
 kitten themes alabaster
 
-echo "font_size 14" >> ~/.config/kitty/kitty.conf
+sudo echo "font_size 14" >> ~/.config/kitty/kitty.conf
 
 
 echo tmux
@@ -30,15 +30,15 @@ cp tmux/.tmux.conf ~/
 
 echo config
 
-echo "options hid_apple swap_opt_cmd=1 fnmode=2" > /etc/modprobe.d/hid_apple.conf
+sudo echo "options hid_apple swap_opt_cmd=1 fnmode=2" > /etc/modprobe.d/hid_apple.conf
 
 fzf --zsh > ~/.config/fzf_integration.sh
-echo "source ~/.config/fzf_integration.sh" >> .zshrc
+sudo echo "source ~/.config/fzf_integration.sh" >> .zshrc
 
 cp -r texteditornvim/nvim ~/.config/
 
-echo "alias t=tmux" >> ~/.zshrc
-echo "alias e=exit" >> ~/.zshrc
-echo "alias v=nvim" >> ~/.zshrc
-echo "alias gs='git status'" >> ~/.zshrc
-echo "alias la='ls -al'" >> ~/.zshrc
+sudo echo "alias t=tmux" >> ~/.zshrc
+sudo echo "alias e=exit" >> ~/.zshrc
+sudo echo "alias v=nvim" >> ~/.zshrc
+sudo echo "alias gs='git status'" >> ~/.zshrc
+sudo echo "alias la='ls -al'" >> ~/.zshrc
