@@ -13,7 +13,9 @@ sudo dnf install -y \
     fzf \
     kitty \
     tmux \
-    curl
+    curl \
+    nvim \
+    chromium
 
 
 echo zsh 
