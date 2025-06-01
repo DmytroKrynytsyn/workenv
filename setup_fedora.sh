@@ -12,18 +12,25 @@ sudo dnf install -y \
     zsh \
     fzf \
     kitty \
-    tmux
+    tmux \
+    curl
+
+
+echo zsh 
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sed -i 's/^ZSH_THEME=.*/ZSH_THEME="zhann"/' ~/.zshrc
 
 
 echo kitty
 
 kitten themes alabaster
-
 sudo echo "font_size 14" >> ~/.config/kitty/kitty.conf
 
 
 echo tmux
 
+sudo rm -rf ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux/.tmux.conf ~/
 
