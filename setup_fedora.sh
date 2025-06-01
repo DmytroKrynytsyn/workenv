@@ -30,7 +30,7 @@ cp tmux/.tmux.conf ~/
 
 echo config
 
-sudo echo "options hid_apple swap_opt_cmd=1 fnmode=2" > /etc/modprobe.d/hid_apple.conf
+echo "options hid_apple swap_opt_cmd=1 fnmode=2" | sudo tee /etc/modprobe.d/hid_apple.conf > /dev/null
 
 fzf --zsh > ~/.config/fzf_integration.sh
 sudo echo "source ~/.config/fzf_integration.sh" >> ~/.zshrc
