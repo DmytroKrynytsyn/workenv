@@ -15,7 +15,15 @@ sudo dnf install -y \
     tmux \
     curl \
     nvim \
-    chromium
+    chromium \
+    lshw \
+    mtr \
+    glances \
+    tcpdump \
+    termshark \
+    systemd-analyze \
+    ts \
+    taskwarrior
 
 
 echo zsh 
