@@ -1,3 +1,3 @@
 rm -rf ~/.config/nvim
-cp -r ~/Documents/workenv/alternative2/nvim ~/.config/
+cp -r ~/Documents/workenv/texteditornvim/nvim ~/.config/
 

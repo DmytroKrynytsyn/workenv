@@ -1,11 +1,6 @@
 return {
     'numToStr/Comment.nvim',
-    opts = {
-        toggler = {
-            line = '<leader>ec',
-        },
-        opleader = {
-            line = 'ec',
-        },
-    }
+    opts = function()
+        require("config.keymaps").Comment()
+    end
 }
