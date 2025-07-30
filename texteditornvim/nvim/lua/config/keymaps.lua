@@ -16,12 +16,6 @@ function Common()
 	vim.keymap.set("t", "<C-k>", "<C-\\><C-n><C-w>k", { desc = "Terminal move to [K] window" })
 	vim.keymap.set("t", "<C-l>", "<C-\\><C-n><C-w>l", { desc = "Terminal move to [L] window" })
 
-	-- Tmux Navigation
-	vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>", { desc = "Tmux navigate [H]eft" })
-	vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>", { desc = "Tmux navigate [J]own" })
-	vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>", { desc = "Tmux navigate [K]up" })
-	vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>", { desc = "Tmux navigate [L]ight" })
-
 	-- Window Management
 	vim.keymap.set("n", "<leader>wv", ":vsplit<CR>", { desc = "[W]indow [V]ertical split" })
 	vim.keymap.set("n", "<leader>wh", ":split<CR>", { desc = "[W]indow [H]orizontal split" })
@@ -90,6 +84,15 @@ function EasyMotion()
 	vim.keymap.set('v', '<Leader>mf', '<Plug>(easymotion-bd-f)', {desc = 'test'})
 end
 
+function TodoComments()
+	vim.keymap.set("n", "<leader>tn", function()
+		require("todo-comments").jump_next()
+	end, { desc = "[T]odo [N]ext" })
+	vim.keymap.set("n", "<leader>tp", function()
+		require("todo-comments").jump_prev()
+	end, { desc = "[T]odo [P]revious" })
+end
+
 return {
 	Telescope = Telescope,
 	Common = Common,
@@ -100,4 +103,5 @@ return {
 	VimFugitive = VimFugitive,
 	Comment = Comment,
 	EasyMotion = EasyMotion,
+	TodoComments = TodoComments,
 }
