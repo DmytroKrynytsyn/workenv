@@ -85,10 +85,10 @@ function EasyMotion()
 end
 
 function TodoComments()
-	vim.keymap.set("n", "<leader>mt", function()
+	vim.keymap.set("n", "<leader>tn", function()
 		require("todo-comments").jump_next()
 	end, { desc = "[T]odo [N]ext" })
-	vim.keymap.set("n", "<leader>mT", function()
+	vim.keymap.set("n", "<leader>tp", function()
 		require("todo-comments").jump_prev()
 	end, { desc = "[T]odo [P]revious" })
 end

@@ -1,23 +1,20 @@
+-- return {
+--   'Mofiqul/vscode.nvim',
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--         vim.cmd.colorscheme('vscode')
+--   end
+-- }
+--
+
 return {
-  'Mofiqul/vscode.nvim',
-  lazy = false,
-  priority = 1000,
-  config = function()
-        vim.cmd.colorscheme('vscode')
+  'kepano/flexoki-neovim',
+  name = 'flexoki',
+  config = function ()
+      vim.cmd('colorscheme flexoki-light')
   end
 }
-
--- TODO: 
-
---[[
--- return {
---  'kepano/flexoki-neovim',
---  name = 'flexoki',
---  config = function ()
---      vim.cmd('colorscheme flexoki-light)
---  end
--- }
-]]--
 
 --[[
 return {
