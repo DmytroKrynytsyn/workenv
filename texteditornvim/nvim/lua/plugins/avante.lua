@@ -19,8 +19,12 @@ return {
         endpoint = "https://api.openai.com/v1",
         model = "gpt-4o", -- or "gpt-4", "gpt-3.5-turbo", "gpt-4-turbo"
         timeout = 30000, -- 30 seconds
-        temperature = 0,
-        max_tokens = 4096,
+        extra_request_body = {
+          temperature = 0,
+        },
+        extra_request_body = {
+          max_tokens = 4096,
+        },
         api_key_name = "AVANTE_OPENAI_API_KEY", -- environment variable name
         ["local"] = false,
       },
@@ -31,8 +35,10 @@ return {
         proxy = nil, -- [protocol://]host[:port] Use this proxy
         allow_insecure = false, -- Allow insecure server connections
         timeout = 30000, -- 30 seconds
-        temperature = 0,
-        max_tokens = 4096,
+        extra_request_body = {
+          temperature = 0,
+          max_tokens = 4096,
+        },
       },
 
       claude = {
