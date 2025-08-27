@@ -29,6 +29,7 @@ function Common()
 	vim.keymap.set("n", "<leader>wc", ":quit<CR>", { desc = "[W]indow [Q]uit" })
     vim.keymap.set("n", "<leader>wb", "<C-w>_", { desc = "[W]indow [B]ig Height" })
     vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "[W]indow [E]qual Height" })
+    vim.keymap.set("n", "<leader>ws", ":resize 1<CR>", { desc = "[W]indow [S]mall Height" })
 
 	vim.keymap.set("n", "<leader><Esc><Esc>", ":noh<CR>", { desc = "Clear search highlights" })
 
@@ -73,6 +74,7 @@ function Telescope()
 	vim.keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "[F]ind [T]ODOs" })
 	vim.keymap.set("n", "<leader>fq", builtin.quickfix, { desc = "[F]ind [Q]uickfix" })
 	vim.keymap.set("n", "<leader>fj", builtin.jumplist, { desc = "Switch to other [J]umps" })
+	vim.keymap.set("n", "<leader>fm", builtin.marks, { desc = "Find [M]arks" })
 
 	vim.keymap.set("n", "<leader>/", function()
 		builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
