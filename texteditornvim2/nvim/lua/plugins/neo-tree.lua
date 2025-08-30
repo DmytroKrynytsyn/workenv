@@ -9,7 +9,7 @@ return {
             },
             window = { 
                 mappings= { 
-                    ["Z"] = "expand_all_nodes",
+                    ["E"] = "expand_all_nodes",
                     ["h"] = "open_split",
                     ["v"] = "open_vsplit",
                     ["s"] = "noop",

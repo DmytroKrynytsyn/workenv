@@ -1,4 +1,10 @@
 function Common()
+
+    vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
+    vim.keymap.set("c", "jj", "<C-c>", { noremap = true })
+    vim.keymap.set("t", "jj", [[<C-\><C-n>]], { noremap = true })
+
+
 	-- Buffer Navigation
 	vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "[N]ext buffer" })
 	vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "[P]revious buffer" })
@@ -61,8 +67,29 @@ function Common()
 end
 
 function Telescope()
+	local telescope = require("telescope")
 	local builtin = require("telescope.builtin")
+	local actions = require("telescope.actions")
+	local trouble_telescope = require("trouble.sources.telescope")
 
+	telescope.setup({
+		defaults = {
+			path_display = { "smart" },
+			mappings = {
+				i = {
+					["<C-k>"] = actions.move_selection_previous, -- move to prev result
+					["<C-j>"] = actions.move_selection_next,     -- move to next result
+					-- ["<C-q>"] = function(prompt_bufnr)
+					-- 	actions.send_selected_to_qflist(prompt_bufnr)
+					-- 	trouble_telescope.open(prompt_bufnr)
+					-- end,
+					["<C-t>"] = trouble_telescope.open,
+				},
+			},
+		},
+	})
+
+	-- keymaps
 	vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "[F]ind [K]eymaps" })
 	vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[F]ind [F]iles" })
 	vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "[F]ind current [W]ord" })
@@ -83,7 +110,9 @@ function Telescope()
 		}))
 	end, { desc = "[/] Fuzzy find in current buffer" })
 
-	vim.keymap.set("n", "<leader>fn", function() builtin.find_files({ cwd = vim.fn.stdpath("config") }) end, { desc = "[F]ind [N]eovim config files" })
+	vim.keymap.set("n", "<leader>fn", function()
+		builtin.find_files({ cwd = vim.fn.stdpath("config") })
+	end, { desc = "[f]ind [n]eovim config files" })
 end
 
 function Neotree()
